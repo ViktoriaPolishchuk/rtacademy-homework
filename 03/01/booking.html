@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header>
+</header>
+<nav>
+    <ul>
+        <li><a href="http://localhost:63342/project1/00/02/08/index.html?_ijt=1m9fd29lekrcu7ranb56mnmt8s&_ij_reload=RELOAD_ON_SAVE">Головна</a></li>
+        <li><a href="http://localhost:63342/project1/00/02/08/contacts.html?_ijt=1m9fd29lekrcu7ranb56mnmt8s&_ij_reload=RELOAD_ON_SAVE">Новини</a></li>
+    </ul>
+</nav>
+<h1> Зареєструватись на безкоштовне тренування</h1>
+<main>
+    <form  method="get">
+        <div>
+            <label for="text">*Прізвище:</label>
+        </div>
+        <div>
+            <input type="text" id="text" name="surname" placeholder="Введіть прізвище" required minlength="2"
+                   maxlength="64">
+        </div>
+        <div>
+            <label for="name">*Імʼя:</label>
+        </div>
+        <div>
+            <input type="text" id="name" name="username" placeholder="Введіть імʼя" required minlength="2"
+                   maxlength="64">
+        </div>
+        <div>
+            <label for="mail">* Email:</label>
+        </div>
+        <div>
+            <input type="email" id="mail" name="mail" placeholder="Введіть email" required minlength="6"
+                   maxlength="255">
+        </div>
+        <div>
+            <label for="tel">* Телефон:</label>
+        </div>
+        <div>
+            <input type="tel" id="tel" name="tel" placeholder="+380000000000" required size="13" minlength="13"
+                   maxlength="13">
+        </div>
+        <div>
+            <label for="url">* Профіль Instagram:</label>
+        </div>
+        <div>
+            <input type="url" id="url" name="url" placeholder="https://instagram.com" minlength="23"
+                   maxlength="255">
+        </div>
+        <div>
+            <label for="zal">* Напрямок:</label>
+        </div>
+        <div>
+            <select name="wrap-the-hall" id="zal" required >
+                <option value="">Оберіть напрямок</option>
+                <option value="zal1">Йога</option>
+                <option value="zal2">Стретчинг</option>
+                <option value="zal3">Функціональне тренування</option>
+            </select>
+        </div>
+        <div>
+            <label for="datetimestart">* Дата і час початку:</label>
+        </div>
+        <div>
+            <input type="datetime-local" name="datetimestart"
+                   id="datetimestart" required min="2022-01-30T00:00" max="2023-01-01T00:00">
+        </div>
+        <div>
+            <label for="datetimeend">* Дата і час кінця:</label>
+        </div>
+        <div>
+            <input type="datetime-local" name="datetimeend"
+                   id="datetimeend" required min="2022-01-30T00:00" max="2023-01-01T00:00">
+        </div>
+        <div>
+            <label for="number">* Кількість людей:</label>
+        </div>
+        <div>
+            <input type="number" name="number" min="1" max="10" step="1" id="number" required >
+        </div>
+        <div>
+            <label for="color">* Якого кольору твій настрій сьогодні?:</label>
+        </div>
+        <div>
+            <input type="color" id="color" name="color">
+        </div>
+        <div>
+            <label for="textarea">* Коментар:</label>
+        </div>
+        <div>
+            <textarea id="textarea" name="textarea"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" value="carrots" name="checked" id="checked" required>
+            <label for="checked"> Я погоджуюсь з</label>
+            <a href="#">  правилами  </a>
+        </div>
+        <div>
+            <button type="reset">Очистити</button>
+            <button type="submit">Надіслати</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>

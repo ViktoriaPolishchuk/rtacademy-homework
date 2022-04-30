@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<main>
+    <img sizes="(max-width: 500px) 320px,
+                    (max-width: 820px) 480px,
+                    (max-width: 1460px) 800px,
+                    (min-width: 1460px) 1440px"
+         srcset="images/372 (1).jpeg 320w,
+                     images/372 (2).jpeg 480w,
+                     images/372 (3).jpeg 800w,
+                     images/372.jpeg 1440w"
+         src="images/372.jpeg" alt="img">
+    <picture>
+        <source media="(max-width: 500px)" srcset="images/01.webp" type="image/webp">
+        <source media="(max-width: 820px)" srcset="images/02.webp" type="image/webp">
+        <source media="(max-width: 1460px)" srcset="images/03.webp" type="image/webp">
+        <source media="(min-width: 1460px)" srcset="images/04.webp" type="image/webp">
+        <source media="(max-width: 500px)" srcset="images/372 (1).jpeg" type="images/jpeg">
+        <source media="(max-width: 820px)" srcset="images/372 (2).jpeg" type="images/jpeg">
+        <source media="(max-width: 1460px)" srcset="images/372 (3).jpeg" type="images/jpeg">
+        <source media="(min-width: 1460px)" srcset="images/372.jpeg" type="images/jpeg">
+        <img src="" alt="img">
+    </picture>
+</main>
+</body>
+</html>
